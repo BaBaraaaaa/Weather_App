@@ -1,0 +1,21 @@
+src/
+├── api/
+│   └── weatherApi.ts         # Fetch API current + forecast
+├── assets/                   # Icon, hình nền fallback
+├── components/
+│   ├── SearchBar.tsx         # Thanh tìm kiếm
+│   ├── WeatherDetails.tsx    # Hiển thị chi tiết thời tiết
+│   ├── ForecastList.tsx      # Dự báo theo giờ
+│   ├── CurrentWeather.tsx    # Nhiệt độ + thành phố + icon chính
+│   └── BackgroundImage.tsx   # Render ảnh nền
+├── hooks/
+│   └── useWeather.ts         # Hook quản lý state + API
+├── types/
+│   └── weather.ts
+├── utils/
+│   ├── formatTemperature.ts
+│   ├── formatDate.ts
+│   └── getWeatherIcon.ts     # Chuyển code API → icon
+├── App.tsx
+├── index.css
+└── vite-env.d.ts

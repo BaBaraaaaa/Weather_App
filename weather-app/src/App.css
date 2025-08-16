@@ -1,0 +1,88 @@
+/* Dark mode theme */
+:root {
+  --bg-main: #181c24;
+  --bg-card: rgba(30,34,44,0.85);
+  --text-main: #f3f6fa;
+  --text-sub: #b0b8c1;
+  --border-main: #23283a;
+  --primary: #1976d2;
+}
+
+body, html, #root {
+  background: var(--bg-main) !important;
+  color: var(--text-main) !important;
+  min-height: 100vh;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+}
+
+input, textarea {
+  background: var(--bg-card);
+  color: var(--text-main);
+  border: 1px solid var(--border-main);
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid var(--primary);
+}
+
+button {
+  background: var(--primary);
+  color: #fff;
+  border: none;
+}
+
+.card, .weather-details, .search-suggestions {
+  background: var(--bg-card);
+  color: var(--text-main);
+  border-radius: 12px;
+  border: 1px solid var(--border-main);
+}
+
+.search-suggestions {
+  background: #23283a;
+  color: var(--text-main);
+}
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}

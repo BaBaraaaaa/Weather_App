@@ -1,0 +1,8 @@
+{
+  "eslint.severity": "warning",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "chat.mcp.enabled": true,
+    "chat.mcp.discovery.enabled": true
+  }
+}
